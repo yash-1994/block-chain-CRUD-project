@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <script src="./script.js" type="module"></script>
+    <script src="ethers-5.6.esm.min.js" type="js"></script>
+
+    <div class="container">
+      <button id="clearListButton">Clear List</button>
+      <!-- Placed at the top -->
+      <div class="cards-container">
+        <div class="card" id="deployCard">
+          <h2>Card 1: Deploy Person</h2>
+          <input type="text" id="personName" placeholder="Name" />
+          <input type="number" id="personAge" placeholder="Age" />
+          <button id="deployButton">Deploy</button>
+        </div>
+        <div class="card" id="retrieveCard">
+          <h2>Card 2: Retrieve Person</h2>
+          <input type="number" id="personID" placeholder="ID" />
+          <button id="retrieveButton">Retrieve</button>
+          <label>Name: <span id="personNameLabel"></span></label>
+          <label>Age: <span id="personAgeLabel"></span></label>
+        </div>
+        <div class="card" id="showCard">
+          <h2>Card 3: Show All People</h2>
+          <button id="showButton">Show</button>
+          <div id="peopleList"></div>
+        </div>
+        <div class="card" id="updateCard">
+            <h2>Card 5: Update Person</h2>
+            <input type="number" id="updatePersonID" placeholder="ID" />
+            <input type="text" id="updatePersonName" placeholder="New Name" />
+            <input type="number" id="updatePersonAge" placeholder="New Age" />
+            <button id="updateButton">Update</button>
+          </div>
+          <div class="card" id="deleteCard">
+            <h2>Card 4: Delete Person</h2>
+            <input type="number" id="deletePersonID" placeholder="ID" />
+            <button id="deleteButton">Delete</button>
+          </div>
+          
+      </div>
+    </div>
+  </body>
+</html>
